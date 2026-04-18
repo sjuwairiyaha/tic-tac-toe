@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero-panel">
+      <div class="hero-copy">
+        <span class="eyebrow">Classic strategy game</span>
+        <h1>Tic-Tac-Toe</h1>
+        <p>Play a quick and responsive game with a polished UI. Choose two-player mode or challenge the AI with score tracking and satisfying animation.</p>
+      </div>
+      <div class="scorecard" aria-live="polite">
+        <div class="score-block">
+          <p class="score-label">Player X</p>
+          <strong id="score-x">0</strong>
+        </div>
+        <div class="score-block">
+          <p class="score-label">Draws</p>
+          <strong id="score-draw">0</strong>
+        </div>
+        <div class="score-block">
+          <p class="score-label">Player O</p>
+          <strong id="score-o">0</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="game-panel">
+      <div class="status-bar" id="status">Player X, it&apos;s your turn</div>
+      <div class="mode-panel" role="group" aria-label="Game mode">
+        <button class="mode-btn active" id="mode-two-player" type="button">Two-player</button>
+        <button class="mode-btn" id="mode-single-player" type="button">Play vs AI</button>
+      </div>
+      <p class="mode-hint" id="mode-hint">Two humans take turns.</p>
+      <div class="board" role="grid" aria-label="Tic Tac Toe board">
+        <button class="cell" data-index="0" aria-label="Cell 1" role="gridcell"></button>
+        <button class="cell" data-index="1" aria-label="Cell 2" role="gridcell"></button>
+        <button class="cell" data-index="2" aria-label="Cell 3" role="gridcell"></button>
+        <button class="cell" data-index="3" aria-label="Cell 4" role="gridcell"></button>
+        <button class="cell" data-index="4" aria-label="Cell 5" role="gridcell"></button>
+        <button class="cell" data-index="5" aria-label="Cell 6" role="gridcell"></button>
+        <button class="cell" data-index="6" aria-label="Cell 7" role="gridcell"></button>
+        <button class="cell" data-index="7" aria-label="Cell 8" role="gridcell"></button>
+        <button class="cell" data-index="8" aria-label="Cell 9" role="gridcell"></button>
+      </div>
+      <div class="controls">
+        <button class="primary-btn" id="restart">Restart Game</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
